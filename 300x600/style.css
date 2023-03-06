@@ -1,0 +1,137 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #532f1c;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #3c1400;
+  border: 1px solid #3c1400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+
+
+#sign {
+  width: 217px;
+  left: 47px;
+  top: 239px;
+}
+
+#bar {
+  width: 276px;
+  left: 12px;
+  top: 133px;
+}
+
+
+#txt01-1 {
+  width: 264px;
+  left: 20px;
+  top: 32px;
+}
+#txt01-2 {
+  width: 259px;
+  left: 20px;
+  top: 68px;
+}
+
+.bg {
+  background-color: #3c1400;
+  width: 300px;
+  height: 600px;
+}
+
+#btn {
+  width: 245px;
+  left: 27px;
+  top: 501px;
+}
+#pack {
+  width: 282px;
+  left: 9px;
+  top: 224px;
+}
+
+
+#frame {
+  width: 186px;
+  left: 56px;
+  top: 199px;
+}
+
+#txt02-1 {
+  width: 186px;
+  left: 57px;
+  top: 67px;
+}
+#txt02-2 {
+  width: 258px;
+  left: 21px;
+  top: 399px;
+}
+
+#txt03 {
+  width: 263px;
+  left: 19px;
+  top: 120px;
+}
+
+
+
+#phone {
+  width: 200px;
+  left: 14px;
+  top: 170px;
+}
+#pods {
+  width: 152px;
+  left: 137px;
+  top: 222px;
+}
+
+#logo {
+  width: 214px;
+  left: 41px;
+  top: 30px;
+}
+
+#schirm {
+  width: 300px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-color: #3c1400;
+  opacity: 0;
+}

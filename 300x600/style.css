@@ -125,6 +125,7 @@ img {
   width: 214px;
   left: 41px;
   top: 30px;
+  transform: scale(0.9) rotate(-3deg) translateY(223px) translateX(-19px);
 }
 
 #schirm {

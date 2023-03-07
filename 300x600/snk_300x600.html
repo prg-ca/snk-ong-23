@@ -12,7 +12,8 @@
     document.addEventListener("DOMContentLoaded", function(event) { 
       TweenLite.ticker.useRAF(false);
       TweenLite.lagSmoothing(0);
-      var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+      // var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+      var tl = new TimelineMax();
 
       tl.from("#schirm", 0.4, {opacity: 1})
         .from("#txt01-1", 0.3, {opacity: 0, scale: 0.5})
@@ -22,18 +23,20 @@
         .to("#bar", 0.25,{rotation: 0})
         .from("#sign", 0.4, {y: 280, scale: 0.5}, '-=0.2')
        
-        .from("#bg02", 0.4, {y: 600}, '+=1.6')
-        .from("#btn", 0.4, {opacity: 0, scale: 1.6}, '-=0.10')
-        .from("#txt02-1", 0.3, {x: -400}, '-=0.1')
-        .from("#pack", 0.4, {scale: 0.6, rotation: -160, opacity: 0}, '-=0.2')
-        .from("#frame", 0.4, {opacity: 0}, '-=0.2')
+        .from("#bg02", 0.4, {opacity: 0}, '+=1.6')
+        .to("#bar", 0.3, {y: 90}, '-=0.4')
+        .from("#frame", 0.4, {opacity: 0}, '-=0.1')
+        .from("#txt02-1", 0.3, {opacity: 0, scale: 1.6}, '-=0.1')
         .from("#txt02-2", 0.4, {opacity: 0, scale: 1.6, y: -30}, '-=0.2')
+        .from("#btn", 0.4, {opacity: 0, scale: 1.6}, '-=0.10')
         
-        .from("#bg03", 0.4, {y: -600}, '+=1.8')
-        .from("#logo", 0.3, {opacity: 0, scale: 1.6}, '-=0.1')
-        .from("#txt03", 0.3, {opacity: 0, scale: 1.6}, '-=0.1')
-        .from("#phone", 0.3, {opacity: 0, y: 40}, '-=0.1')
-        .from("#pods", 0.3, {opacity: 0, y: 40}, '-=0.1')
+        .from("#logo", 0.4, {opacity: 0}, '+=1.8')
+        .from("#bg03", 0.4, {opacity: 0}, '-=0.3')
+        .to("#logo", 0.5, {scale: 1, y: 0, x: 0, rotation: 0}, '-=0.3')
+        // .from("#logo", 0.3, {opacity: 0, scale: 0.92, rotation: -3, y: 206}, '-=0.1')
+        .from("#txt03", 0.4, {opacity: 0, scale: 1.6}, '-=0.1')
+        .from("#phone", 0.4, {opacity: 0, y: 40}, '-=0.1')
+        .from("#pods", 0.4, {opacity: 0, y: 40}, '-=0.1')
       ;
    });
   </script>
@@ -44,24 +47,24 @@
       <div id="sign" class="el">
         <img src="sign.png">
       </div>
-      <div id="bar" class="el">
-       <img src="bar.png">
-     </div>
       <div id="txt01-1" class="el">
         <img src="txt01-1.svg">
       </div>
       <div id="txt01-2" class="el">
         <img src="txt01-2.svg">
       </div>
-
+      
       <div id="bg02" class="el bg">
       </div>
+      <div id="bar" class="el">
+       <img src="bar.png">
+     </div>
       <div id="frame" class="el">
         <img src="frame.svg">
       </div>
-      <div id="pack" class="el">
+      <!-- <div id="pack" class="el">
         <img src="pack.png">
-      </div>
+      </div> -->
 
       <div id="txt02-1" class="el  txt02">
         <img src="txt02-1.svg">

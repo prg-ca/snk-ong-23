@@ -1,0 +1,137 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #532f1c;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #3c1400;
+  border: 1px solid #3c1400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+
+
+#sign {
+  width: 150px;
+  left: 82px;
+  top: 12px;
+}
+
+#bar {
+  width: 264px;
+  left: 20px;
+  top: 129px;
+}
+#bar2 {
+  width: 264px;
+  left: 18px;
+  top: 75px;
+}
+
+
+#txt01-1 {
+  width: 258px;
+  left: 24px;
+  top: 30px;
+}
+#txt01-2 {
+  width: 253px;
+  left: 24px;
+  top: 66px;
+}
+
+.bg {
+  background-color: #3c1400;
+  width: 300px;
+  height: 250px;
+}
+
+#btn {
+  width: 240px;
+  left: 30px;
+  top: 211px;
+}
+
+
+#frame {
+  width: 136px;
+  left: 78px;
+  top: 64px;
+}
+
+#txt02-1 {
+  width: 273px;
+  left: 13px;
+  top: 18px;
+}
+#txt02-2 {
+  width: 156px;
+  left: 72px;
+  top: 206px;
+}
+
+#txt03 {
+  width: 143px;
+  left: 18px;
+  top: 119px;
+}
+
+
+
+#phone {
+  width: 92px;
+  left: 178px;
+  top: 14px;
+}
+#pods {
+  width: 80px;
+  left: 210px;
+  top: 83px;
+}
+
+#logo {
+  width: 148px;
+  left: 18px;
+  top: 59px;
+}
+
+#schirm {
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #3c1400;
+  opacity: 0;
+}

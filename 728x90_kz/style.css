@@ -1,0 +1,130 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #532f1c;
+}
+
+.container {
+  position: absolute;
+  width: 728px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #3c1400;
+  border: 1px solid #3c1400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+
+
+#sign {
+  width: 54px;
+  left: 49px;
+  top: 5px;
+}
+
+#bar {
+  width: 245px;
+  left: 408px;
+  top: 5px;
+}
+
+
+#txt01-1 {
+  width: 264px;
+  left: 100px;
+  top: 10px;
+}
+#txt01-2 {
+  width: 261px;
+  left: 100px;
+  top: 46px;
+}
+
+.bg {
+  background-color: #3c1400;
+  width: 728px;
+  height: 90px;
+}
+
+#btn {
+  width: 297px;
+  left: 337px;
+  top: 22px;
+}
+
+
+
+#frame {
+  width: 86px;
+  left: 63px;
+  top: 7px;
+}
+
+#txt02 {
+  width: 365px;
+  left: 232px;
+  top: 12px;
+}
+
+
+#txt03 {
+  width: 324px;
+  left: 253px;
+  top: 44px;
+}
+
+
+
+#phone {
+  width: 55px;
+  left: 630px;
+  top: 2px;
+}
+#pods {
+  width: 39px;
+  left: 665px;
+  top: 22px;
+}
+
+#logo {
+  width: 215px;
+  left: 96px;
+  top: 14px;
+  /* transform: scale(0.905) rotate(-3deg) translateY(149px) translateX(-11px); */
+}
+
+#schirm {
+  width: 728px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  background-color: #3c1400;
+  opacity: 0;
+}

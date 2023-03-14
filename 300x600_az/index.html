@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=300,height=600">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+      // var tl = new TimelineMax();
+
+      tl.from("#schirm", 0.4, {opacity: 1})
+        .from("#txt01-1", 0.3, {opacity: 0, scale: 0.5})
+        .from("#txt01-2", 0.4, {opacity: 0, scale: 0.5}, '-=0.1')
+        .from("#bar", 0.4, {opacity: 0, scale: 0.5}, '-=0.1')
+        .to("#bar", 0.25, {rotation: -4})
+        .to("#bar", 0.25,{rotation: 0})
+        .from("#sign", 0.4, {y: 280, scale: 0.5}, '-=0.2')
+       
+        .from("#bg02", 0.4, {opacity: 0}, '+=1.6')
+        .to("#bar", 0.3, {y: 90}, '-=0.4')
+        .from("#frame", 0.4, {opacity: 0}, '-=0.1')
+        .from("#txt02-1", 0.3, {opacity: 0, scale: 1.6}, '-=0.1')
+        .from("#txt02-2", 0.4, {opacity: 0, scale: 1.6, y: -30}, '-=0.2')
+        .from("#btn", 0.4, {opacity: 0, scale: 1.6}, '-=0.10')
+        
+        .from("#logo", 0.4, {opacity: 0}, '+=1.8')
+        .from("#bg03", 0.4, {opacity: 0}, '-=0.3')
+        .to("#logo", 0.5, {scale: 1, y: 0, x: 0, rotation: 0}, '-=0.3')
+        // .from("#logo", 0.3, {opacity: 0, scale: 0.92, rotation: -3, y: 206}, '-=0.1')
+        .from("#txt03", 0.4, {opacity: 0, scale: 1.6}, '-=0.1')
+        .from("#phone", 0.4, {opacity: 0, y: 40}, '-=0.1')
+        .from("#pods", 0.4, {opacity: 0, y: 40}, '-=0.1')
+      ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)">
+    <div class="container">
+      <div id="sign" class="el">
+        <img src="sign.png">
+      </div>
+      <div id="txt01-1" class="el">
+        <img src="txt01-1.svg">
+      </div>
+      <div id="txt01-2" class="el">
+        <img src="txt01-2.svg">
+      </div>
+      
+      <div id="bg02" class="el bg">
+      </div>
+      <div id="bar" class="el">
+       <img src="bar.png">
+     </div>
+      <div id="frame" class="el">
+        <img src="frame.svg">
+      </div>
+      <!-- <div id="pack" class="el">
+        <img src="pack.png">
+      </div> -->
+
+      <div id="txt02-1" class="el  txt02">
+        <img src="txt02-1.svg">
+      </div>
+      <div id="txt02-2" class="el  txt02">
+        <img src="txt02-2.svg">
+      </div>
+      <div id="bg03" class="el bg">
+      </div>
+      <div id="txt03" class="el  txt03">
+        <img src="txt03.svg">
+      </div>
+      <div id="phone" class="el">
+        <img src="phone.png">
+      </div>
+      <div id="pods" class="el">
+        <img src="pods.png">
+      </div>
+      <div id="logo" class="el">
+        <img src="logo.svg">
+      </div>
+      <div id="btn" class="el">
+        <img src="btn.svg">
+      </div>
+      <div id="schirm" class="el"></div>
+    </div>
+  </a>
+</body>
